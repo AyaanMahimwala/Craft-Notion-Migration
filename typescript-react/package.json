@@ -11,11 +11,13 @@
   "devDependencies": {
     "@craftdocs/craft-extension-api": "0.0.4",
     "@craftdocs/craft-extension-api-sdk": "0.0.4",
+    "@tryfabric/martian": "^1.2.4",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "copy-webpack-plugin": "^9.1.0",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
+    "path-browserify": "^1.0.1",
     "react-dev-utils": "^11.0.4",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.2.6",
@@ -27,6 +29,7 @@
     "zip-webpack-plugin": "^4.0.1"
   },
   "dependencies": {
+    "@tryfabric/martian": "^1.2.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }

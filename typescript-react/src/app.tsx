@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import craftXIconSrc from "./craftx-icon.png";
+import { markdownToBlocks, markdownToRichText } from "@tryfabric/martian";
 
 const App: React.FC<{}> = () => {
   const isDarkMode = useCraftDarkMode();
@@ -62,7 +63,12 @@ async function insertHelloWorld() {
     }
   );
 
+  console.log("MARKDOWN:");
   console.log(markdown);
+  const notionBlocks = markdownToBlocks(markdown);
+
+  console.log("NOTION BLOCKS");
+  console.log(notionBlocks);
 
   // const block = craft.blockFactory.textBlock({
   //   content: "Hello world!",
